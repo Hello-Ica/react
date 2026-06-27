@@ -1,0 +1,16 @@
+  .login-button{
+        background-color: rgb(0, 123, 255);
+        border: none;
+        padding: 10px 15px;
+        color: white;
+        border-radius: 8px;
+        margin-right: 5px;
+      }
+      .email, .password{
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-bottom: 5px;
+      }
+      .show-button{
+        margin-left: 10px;
+      }
