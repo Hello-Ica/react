@@ -1,3 +1,4 @@
+import dayjs from 'dayjs';
 import { useState } from 'react'
 import { Chatbot } from 'supersimpledev';
 import './ChatInput.css';
@@ -17,9 +18,10 @@ import './ChatInput.css';
           {
             message: inputText,
             sender: 'user',
-            id: crypto.randomUUID()
+            id: crypto.randomUUID(),
+            time: dayjs().valueOf()
           }
-        ]
+        ];
         setChatMessages(newChatMessages);
 
         const response = Chatbot.getResponse(inputText);
@@ -28,12 +30,18 @@ import './ChatInput.css';
           {
             message: response,
             sender: 'robot',
-            id: crypto.randomUUID()
+            id: crypto.randomUUID(),
+            time: dayjs().valueOf()
           }
         ]);
         setInputText('');
 
       }
+
+      function clearMessages() {
+          setChatMessages([]);
+
+        }
       return (
         <div className = "chat-input-container">
           <input 
@@ -46,6 +54,10 @@ import './ChatInput.css';
           <button
           onClick = {sendMessage}
           className = "send-button"> Send </button>
+          <button 
+          onClick = {clearMessages}
+          className = "clear-button"
+          > Clear </button>
         </div>
       );
      }
