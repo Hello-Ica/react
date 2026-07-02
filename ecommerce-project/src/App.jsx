@@ -1,5 +1,7 @@
 import {Routes, Route} from 'react-router';
+import { CheckoutPage } from './pages/CheckoutPage';
 import {HomePage} from './pages/HomePage'
+import { OrdersPage } from './pages/OrdersPage';
 
 import './App.css'
 
@@ -8,7 +10,8 @@ function App() {
   return (
     <Routes>
       <Route path = "/" element={<HomePage />} />
-      <Route path="checkout" element = {<div> Test Checkout Page </div>} />
+      <Route path="checkout" element = {<CheckoutPage />} />
+      <Route path="orders" element = {<OrdersPage />} />
     </Routes>
   )
 }

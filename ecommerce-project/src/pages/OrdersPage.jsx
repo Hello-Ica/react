@@ -1,60 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
+import './OrdersPage.css'
+import { Header } from '../components/Header';
+export function OrdersPage() {
+  return (
+    <>
     <title>Orders</title>
 
-    <!-- This code is needed for responsive design to work.
-      (Responsive design = make the website look good on
-      smaller screen sizes like a phone or a tablet). -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Load a font called Roboto from Google Fonts. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Here are the CSS files for this page. -->
-    <link rel="stylesheet" href="styles/shared/general.css">
-    <link rel="stylesheet" href="styles/shared/header.css">
-    <link rel="stylesheet" href="styles/pages/orders.css">
-  </head>
-  <body>
-    <div class="header">
-      <div class="left-section">
-        <a href="/" class="header-link">
-          <img class="logo"
-            src="images/logo-white.png" />
-          <img class="mobile-logo"
-            src="images/mobile-logo-white.png" />
-        </a>
-      </div>
-
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search" />
-
-        <button class="search-button">
-          <img class="search-icon" src="images/icons/search-icon.png" />
-        </button>
-      </div>
-
-      <div class="right-section">
-        <a class="orders-link header-link" href="/orders">
-
-          <span class="orders-text">Orders</span>
-        </a>
-
-        <a class="cart-link header-link" href="/checkout">
-          <img class="cart-icon" src="images/icons/cart-icon.png" />
-          <div class="cart-quantity">3</div>
-          <div class="cart-text">Cart</div>
-        </a>
-      </div>
-    </div>
+    <Header />  
 
     <div class="orders-page">
       <div class="page-title">Your Orders</div>
 
-      <div class="orders-grid">
+      <div className="orders-grid">
         <div class="order-container">
 
           <div class="order-header">
@@ -110,7 +66,7 @@
 
             <div class="product-details">
               <div class="product-name">
-                Adults Plain Cotton T-Shirt - 2 Pack
+                sAdults Plain Cotton T-Shirt - 2 Pack
               </div>
               <div class="product-delivery-date">
                 Arriving on: August 19
@@ -186,5 +142,6 @@
         </div>
       </div>
     </div>
-  </body>
-</html>
+    </>
+  )
+}
