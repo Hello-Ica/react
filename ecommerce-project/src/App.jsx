@@ -2,7 +2,7 @@ import {Routes, Route} from 'react-router';
 import { CheckoutPage } from './pages/checkout/CheckoutPage';
 import {HomePage} from './pages/HomePage'
 import { OrdersPage } from './pages/OrdersPage';
-
+import { Tracking } from './pages/Tracking';
 import './App.css'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Route path = "/" element={<HomePage />} />
       <Route path="checkout" element = {<CheckoutPage />} />
       <Route path="orders" element = {<OrdersPage />} />
-      
+      <Route path="tracking" element = {<Tracking />} />
     </Routes>
   )
 }

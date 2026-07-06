@@ -6,7 +6,7 @@
   return (
     <>
      <title>Ecommerce Project</title>
-     <link rel= "icon" type = "image/svg+xml" href= "favicon.png" />
+     <link rel= "icon" type = "image/svg+xml" href= "home-favicon.png" />
      <Header />
     
 
