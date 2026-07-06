@@ -5,8 +5,10 @@
  export function HomePage(){
   return (
     <>
-      <Header />
      <title>Ecommerce Project</title>
+     <link rel= "icon" type = "image/svg+xml" href= "favicon.png" />
+     <Header />
+    
 
     
       <div className="home-page">
