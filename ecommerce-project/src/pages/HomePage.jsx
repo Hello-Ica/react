@@ -1,9 +1,14 @@
+import axios from 'axios';
 import { Header } from '../components/Header';
 import CheckmarkIcon from '../assets/images/icons/checkmark.png';
 import './HomePage.css';
 import {products} from '../../starting-code/data/products.js';
 
 export function HomePage(){
+  axios.get('http://localhost:3000/api/products')
+    .then((response) => {
+      console.log(response.data);
+    })
   return (
     <>
       <title>Ecommerce Project</title>
