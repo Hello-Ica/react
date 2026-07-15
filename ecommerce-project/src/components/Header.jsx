@@ -19,7 +19,7 @@ export function Header({cart}) {
           <img className="logo"
             src={LogoWhite} />
           <img className="mobile-logo"
-            src="images/mobile-logo-white.png" />
+            src={MobileLogoWhite} />
         </NavLink>
       </div>
 
