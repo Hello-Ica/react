@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useState, useEffect, Fragment } from 'react';
 import { NavLink } from 'react-router';
 import { Header } from '../../components/Header';
-import BuyAgainIcon from '../assets/images/icons/buy-again.png';
+import BuyAgainIcon from '../../assets/images/icons/buy-again.png';
 
 export function OrdersPage({ cart }) {
   const [orders, setOrders] = useState([]);
